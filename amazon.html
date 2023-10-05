@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background-color: lightgrey;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logoamz {
+      background-color: #222f3e;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    #logoamazon {
+      width: 140px; /* Tamagno del logo */
+    }
+
+    /* Sfondo grigio chiaro */
+    .menu {
+      background-color: #354758;
+      text-align: left;
+      padding: 10px;
+      padding-right: 0px;
+      width: 100%;
+    }
+
+    /* Distanze e colore per il menu */
+    .menu span {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      padding-left: 20px;
+    }
+
+    /* Larghezza sfondo arancione */
+    .giftcards {
+      width: 100%;
+    }
+
+    /* Testo su fondoo arancione */
+    .giftcards h3 {
+      text-align: center;
+      background-color: #ea6101;
+      margin: 30px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      color: white;
+    }
+
+    .image-container {
+      position: relative;
+      height: 300px; /* Altezza desiderata */
+      margin: 30px; /* Margine di 30px su tutti i lati */
+    }
+
+    /* Stile per l'immagine */
+    .image-container img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: 15rem;
+    }
+
+    /* Stile per la frase centrata sopra l'immagine */
+    .image-regali h1 {
+      position: absolute; /* Inserisce il testo sopra l'immagine */
+      top: 35%; /* Posiziona la frase al centro verticalmente */
+      left: 50%; /* Posiziona la frase al centro orizzontalmente */
+      transform: translate(-50%, -50%); /* Centra la frase correttamente */
+      background-color: none rgba(0, 0, 0, 0.7); /* Sfondo trasparente con opacità */
+      color: white; /* Colore del testo */
+    }
+
+    /* Stile per la frase centrata sopra l'immagine */
+    .image-regali h3 {
+      position: absolute; /* Inserisce il testo sopra l'immagine */
+      top: 50%; /* Posiziona la frase al centro verticalmente */
+      left: 50%; /* Posiziona la frase al centro orizzontalmente */
+      transform: translate(-50%, -50%); /* Centra la frase correttamente */
+      background-color: none rgba(0, 0, 0, 0.7); /* Sfondo trasparente con opacità */
+      color: white; /* Colore del testo */
+      padding: 10px; /* Spaziatura interna per la frase */
+    }
+
+    /*Stile per il testo 'Shop now'*/
+    .title-container {
+      text-align: left; /* Posiziona il testo a sinistra */
+      padding-left: 10px; /* Distanza sinistra dal contenitore alla titolo */
+      font-size: 1.5rem; /* Tamagno della letera */
+    }
+
+    /* Contenitore delle 4 immagini */
+    #fourimage {
+      display: inline-block; /* Mette in linea gli elementii */
+      position: absolute; /* Posiziona il testo sopra l'immagine (priorità assoluta) */
+      top: 23%; /* Sposta verso l'alto il contenitore */
+      background-color: white; /* Sfondo */
+      padding-top: 15px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      margin: 30px; /* Margen dei 4 lati delle immagini */
+      width: 98%; /* Larghezza totale */
+      text-align: center; /* Centraggio delle 4 immagini */
+    }
+
+    /* Applica per ogni immagine, delle 4 */
+    #fourimage img {
+      width: 375px;
+      height: 420px;
+      object-fit: cover; /* Ridefinisce l'immagine */
+      margin: 1rem;
+      -webkit-box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+      border-radius: 20px; /* Fa i bordi rotondi */
+    }
+
+    .virtual-code {
+      text-align: center;
+      margin-top: 2rem;
+      position: relative;
+      bottom: -30rem;
+    }
+
+    #fotovr1 {
+      overflow: hidden;
+      width: 98%; /* Larghezza totale */
+      margin: 30px;
+      display: block;
+    }
+    #fotovr2 {
+      overflow: hidden;
+      width: 98%; /* Larghezza totale */
+      margin: 30px;
+      display: block;
+      position: relative;
+     
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      padding-left: 1rem;
+    }
+    #logo-in-basso {
+      text-align: center;
+    }
+    footer {
+      position: relative;
+      bottom: -30rem;
+    }
+    #logo-in-basso img {
+      width: 200px;
+      position: relative;
+      bottom: -50px;
+    }
+    .per-grigio-oscuro {
+      background-color: #222f3e;
+      padding-bottom: 100px;
+    }
+    .per-grigio-chiaro {
+      background-color: #354758;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .lettera-link-white {
+      color: white; /* Colore */
+      font-size: 1.5rem; /* Peso della lettera */
+      position: relative; /* Per muovere gli elementi R.L.T.B */
+      bottom: 10px; /* Si è allungato il basso, si è mosso in su */
+    }
+  </style>
+
+  <body>
+    <main style="margin: 0">
+      <!--Contenitore (Logo + Color)-->
+      <header>
+        <div class="logoamz">
+          <img id="logoamazon" src="./IMMAGINI/logo.png" alt="Amazon" />
+        </div>
+      </header>
+      <!--Contenitore (Testi + Color)-->
+      <div class="menu">
+        <span>All</span>
+        <span>Today's deals</span>
+        <span>Custom Service</span>
+        <span>Registry</span>
+        <span>Gift Cards</span>
+        <span>Sell</span>
+      </div>
+      <!--Contenitore (Titoletto + Color)-->
+      <div class="giftcards">
+        <h3>Shop All Holiday Gift Cards</h3>
+      </div>
+      <!--Contenitore (Foto regali + testi sopra)-->
+      <div class="image-container">
+        <img src="./IMMAGINI/bg-image.png" alt="regali" />
+        <div class="image-regali">
+          <h1>Holyday Gift Guides</h1>
+          <h3>Be a go-Gifter</h3>
+        </div>
+      </div>
+      <!--Contenitore (Testo + 4 foto)-->
+      <div id="fourimage">
+        <div class="title-container">
+          <span class="title">Find the perfect gift</span>
+          <span><a href="#">Shop now</a></span>
+        </div>
+        <img src="./IMMAGINI/img_1.jpg" alt="" />
+        <img src="./IMMAGINI/img_2.jpg" alt="" />
+        <img src="./IMMAGINI/img_3.jpg" alt="" />
+        <img src="./IMMAGINI/img_4.jpg" alt="" />
+      </div>
+      <!--Contenitore (Immagine + testo giu)-->
+      <div class="virtual-code">
+        <img id="fotovr1" src="./IMMAGINI/img_9.png" alt="" />
+        <span class="title">Play the gifting game</span>
+        <span class="subtitle"><a href="#">Shop gaming</a></span>
+      </div>
+      <!--Contenitore (Immagine + testo giu)-->
+      <div class="virtual-code">
+        <img id="fotovr2" src="./IMMAGINI/img_10.png" alt="" />
+        <span class="title">The sound of cheer</span>
+        <span class="subtitle"><a href="#">Shop Audio & Accessories</a></span>
+      </div>
+    </main>
+    <!--Contenitore (Click su link + Logo amazon)-->
+    <footer>
+      <div id="back-to-top" class="per-grigio-chiaro">
+        <a class="lettera-link-white" href="#">Back to top</a>
+      </div>
+      <div id="logo-in-basso" class="per-grigio-oscuro">
+        <img src="./IMMAGINI/logo.png" />
+      </div>
+    </footer>
+  </body>
+</html>
